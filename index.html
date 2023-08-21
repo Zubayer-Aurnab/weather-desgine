@@ -7,32 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/ee1c2b42d0.js" crossorigin="anonymous"></script>
     <!-- tailwind -->
-    <title>Document</title>
+    <title>CITY WEATHER.COM</title>
   </head>
   <body>
     <main class=" bg-gradient-to-b from-indigo-800 to-gray-700  lg:w-4/5 mx-auto lg:mt-14  p-4 ">
       <div class=" bg-gradient-to-b from-indigo-800 to-gray-700 p-4 rounded-lg">
         <!-- search section  -->
         <section class="mt-5">
-            <div class="flex justify-between md:mx-11 lg:justify-center items-center gap-6">
-                <input class="p-2 rounded-lg lg:w-[40%]" type="text" placeholder="CITY"> <span><i class="fa-solid fa-magnifying-glass fa-xl bg-white p-5 rounded-full w-10 flex justify-center items-center cursor-pointer "></i></span>
+            <div class="flex justify-center md:mx-11 lg:justify-center items-center gap-3">
+                <input id="search-box" class="p-2 rounded-lg lg:w-[40%]" type="text" placeholder="CITY"> <span><i id="search-btn" class="fa-solid fa-magnifying-glass fa-xl bg-white p-5 rounded-full w-10 flex justify-center items-center cursor-pointer "></i></span>
     
             </div>
         </section>
         <!-- main section  -->
         <section class="mt-5">
             <div class="flex justify-center items-center">
-                <img src="./images/rain.png" alt="">
+                <img id="images" src="./images/rain.png" alt="">
             </div>
-            <h1 class="text-white text-center text-5xl font-semibold mt-4">34°C</h1>
-            <p class="text-white text-center text-3xl font-normal  mt-7">BANGLADESH</p>
+            <h1 id="temperature" class="text-white text-center text-5xl font-semibold mt-4">00°C</h1>
+            <p id="bangladesh" class="text-white text-center text-3xl font-normal  mt-7">BANGLADESH</p>
 
             <div class="flex flex-col items-center gap-12 lg:flex-row justify-between w-4/5 mx-auto mt-32 mb-2 ">
                 <!-- 1 -->
                 <div class="flex gap-5">
                     <img class="w-14" src="./images/wind.png" alt="">
                     <div>
-                        <p class="text-white text-2xl mb-2">14 km/h</p>
+                        <p class="text-white text-2xl mb-2"><span id="wind">00</span> km/h</p>
                         <p class="text-white"> Wind Speed</p> 
                     </div>
                 </div>
@@ -40,8 +40,8 @@
                 <div  class="flex gap-5"> 
                     <img class="w-12" src="./images/humidity.png" alt="">
                     <div>
-                        <p class="text-white text-3xl mb-2">50%</p>
-                        <p class="text-white"> Wind Speed</p> 
+                        <p id="humidity" class="text-white text-3xl mb-2">00%</p>
+                        <p class="text-white"> Humidity</p> 
                     </div> 
                 </div>
 
